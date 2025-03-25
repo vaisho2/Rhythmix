@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="Music Player" />
+    <meta name="description" content="Rhythmix" />
+    <meta name="author" content="Vaish" />
+    <!-- Page title -->
+    <title>Rhythmix</title>
+    <!-- Linked style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linked icons anf fonts -->
+    <script
+      src="https://kit.fontawesome.com/698b0d49df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Music Player Application -->
+    <div class="player">
+      <h2>Rhythmix</h2>
+      <!-- Upload section -->
+      <div class="upload">
+        <span>Upload Your Track</span>
+        <div>
+          <input type="file" id="fileInput" multiple accept="audio/*" hidden />
+          <label for="fileInput" class="custom-upload-btn">
+            <i class="fa-solid fa-upload"></i> Choose File
+          </label>
+          <button onclick="addSongs()">Add to Playlist</button>
+        </div>
+      </div>
+
+      <!-- Current song section -->
+      <div class="song-section">
+        <h3 id="currentSong">No song playing</h3>
+        <audio id="audioPlayer"></audio>
+
+        <!-- Progress Bar -->
+        <div class="progress-container" onclick="seek(event)">
+          <div class="progress-bar"></div>
+        </div>
+
+        <!-- Music Player Controls -->
+        <div class="controls">
+          <button onclick="prevSong()">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button id="playPauseBtn" onclick="togglePlayPause()">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button onclick="nextSong()">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Playlist section -->
+      <h3 id="playlist-header">Playlist</h3>
+      <ul id="playlist"></ul>
+    </div>
+
+    <!-- Linked JS file -->
+    <script src="script.js"></script>
+  </body>
+</html>

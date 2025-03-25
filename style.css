@@ -1,0 +1,236 @@
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  background-color: #bbdefb;
+}
+
+/* Styling music player */
+.player {
+  width: 650px;
+  margin: 50px auto;
+  background: #e3f2fdb2;
+  padding: 10px 125px 125px 125px;
+  border-radius: 70px;
+  box-shadow: inset 10px 10px 20px #fafafa, 0.3em 0.3em 1em #fafafa;
+}
+
+h2 {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  margin: 70px;
+}
+
+i {
+  color: #0d47a1;
+}
+
+/* Styling Song Upload section */
+.upload {
+  background-color: #bbdefb;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 10px #fafafa, 0.3em 0.3em 1em #fafafa;
+  padding: 20px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload span {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.upload label {
+  border-radius: 1px solid #0d47a1;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.upload button {
+  border: 1px solid #0d47a1;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #90caf9;
+  box-shadow: inset 4px 4px 8px #fafafa;
+  border-radius: 1px solid #0d47a1;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.upload button:hover {
+  background-color: #ccc;
+}
+
+/* Styling current song section */
+.song-section {
+  padding: 50px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.song-section img {
+  width: 15em;
+  height: 15em;
+}
+
+/* Styling Control buttons (Play, Pause, Next, Prev) */
+.controls button {
+  margin: 10px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #007bff;
+  background: #fff;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.controls button:hover {
+  background: #64b4f6b7;
+  box-shadow: inset 5px 5px 10px #fafafa;
+}
+
+.song-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.now-playing-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+.now-playing-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Styling Progress Bar */
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  margin: 15px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #1565c0;
+  border-radius: 5px;
+}
+
+/* Styling Playlist Section */
+
+#playlist-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #bbdefb;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0.3em 0.3em 1em #fafafa;
+}
+
+ul li:hover {
+  background: #7fc8f8;
+}
+
+/* Styling Playlist Buttons */
+.download-btn {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #90caf9;
+  box-shadow: inset 7px 5px 10px #fafafa;
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.download-btn:hover {
+  background-color: #aee0b0;
+}
+
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #90caf9;
+  box-shadow: inset 7px 7px 14px #fafafa;
+  color: white;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.delete-btn:hover {
+  background: rgb(226, 169, 169);
+}
+
+/* Styling playlist songs */
+.playlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.song-name {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
